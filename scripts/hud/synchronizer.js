@@ -308,12 +308,11 @@ class Synchronizer {
 	}
 
 	static {
-		$.RegisterEventHandler('ChaosHudProcessInput', $.GetContextPanel(), this.onUpdate.bind(this));
-
-		$.RegisterForUnhandledEvent('OnSynchroModeChanged', this.setSynchroMode.bind(this));
-		$.RegisterForUnhandledEvent('OnSynchroColorModeChanged', this.setSynchroColorMode.bind(this));
-		$.RegisterForUnhandledEvent('OnSynchroDirectionChanged', this.setSynchroDirection.bind(this));
-		$.RegisterForUnhandledEvent('OnSynchroBufferChanged', this.setSynchroBufferLength.bind(this));
-		$.RegisterForUnhandledEvent('ChaosLevelInitPostEntity', this.onLoad.bind(this));
+		// $.RegisterEventHandler('ChaosHudProcessInput', $.GetContextPanel(), this.onUpdate.bind(this));
+		// $.RegisterForUnhandledEvent('OnSynchroModeChanged', this.setSynchroMode.bind(this));
+		// $.RegisterForUnhandledEvent('OnSynchroColorModeChanged', this.setSynchroColorMode.bind(this));
+		// $.RegisterForUnhandledEvent('OnSynchroDirectionChanged', this.setSynchroDirection.bind(this));
+		// $.RegisterForUnhandledEvent('OnSynchroBufferChanged', this.setSynchroBufferLength.bind(this));
+		// $.RegisterForUnhandledEvent('ChaosLevelInitPostEntity', this.onLoad.bind(this));
 	}
 }
