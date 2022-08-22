@@ -7,7 +7,7 @@
 		<include src="file://{resources}/scripts/hud/speedometer.js" />
 	</scripts>
 
-	<MomHudSpeedometer class="horizontal-align-center" onload="Speedometer.onLoad()">
+	<MomHudSpeedometer onload="Speedometer.onLoad()">
 		<Panel id="SpeedometerContainer" class="speedometers">
 			<Panel id="AbsSpeedometerContainer" class="speedometer">
 				<Label id="AbsSpeedometer" text="" class="text-align-center speedometer__axis" />

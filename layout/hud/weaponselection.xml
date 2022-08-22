@@ -24,7 +24,7 @@
 		</snippet>
 	</snippets>
 
-	<MomHudWeaponSelection class="full-width">
+	<MomHudWeaponSelection>
 		<ConVarEnabler
 			id="WeaponSelection"
 			class="weaponselection"

@@ -6,7 +6,7 @@
 		<include src="file://{resources}/scripts/hud/stickycharge.js" />
 	</scripts>
 
-	<MomHudStickyCharge class="horizontal-align-center">
+	<MomHudStickyCharge>
 		<Panel id="StickyChargeContainer" class="stickycharge horizontal-align-center">
 			<ProgressBar id="StickyChargeMeter" class="horizontal-align-center progressbar-hudmeter" />
 			<Label
