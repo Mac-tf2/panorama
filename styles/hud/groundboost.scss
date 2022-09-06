@@ -1,0 +1,25 @@
+@use '../config' as *;
+
+.groundboost {
+	horizontal-align: right;
+	height: 100px;
+	width: 100px;
+	margin: 6px 0px 6px 0;
+
+	&__meter {
+		height: 100%;
+		width: 100%;
+
+		.CircularProgressBarFG {
+			height: 100%;
+			width: 100%;
+			background-color: $blue; //gradient(radial, 50% 50%, 0% 0%, 50%, 50%, from(white), to(black));
+		}
+
+		.CircularProgressBarBG {
+			height: 100%;
+			width: 100%;
+			background-color: $progressbar-background;
+		}
+	}
+}

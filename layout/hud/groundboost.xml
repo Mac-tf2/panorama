@@ -1,0 +1,19 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/main.scss" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/hud/groundboost.js" />
+	</scripts>
+
+	<MomHudGroundboost>
+		<Panel id="GroundboostContainer" class="groundboost horizontal-align-center">
+			<CircularProgressBar id="GroundboostMeter" class="horizontal-align-center groundboost__meter" />
+			<Label
+				id="GroundboostTime"
+				text=""
+				class="horizontal-align-center vertical-align-center text-align-center progressbar-hudmeter__label"
+			/>
+		</Panel>
+	</MomHudGroundboost>
+</root>
