@@ -38,3 +38,17 @@
 		text-shadow: $progressbar-hudmeter-text-shadow;
 	}
 }
+
+.progressbar-circular {
+	width: 100px;
+	height: 100px;
+	box-shadow: $progressbar-shadow;
+
+	.CircularProgressBarFG {
+		//background-color: gradient(radial, 50% 50%, 0% 0%, 50%, 50%, from($light-blue), to($blue));
+	}
+
+	.CircularProgressBarBG {
+		background-color: $progressbar-background;
+	}
+}

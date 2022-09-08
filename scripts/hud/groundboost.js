@@ -1,5 +1,12 @@
 'use strict';
 
+const TIMER_FLAGS = {
+	NONE: 0,
+	LANDING: 1 << 0,
+	KNOCKBACK: 1 << 1,
+	WATERJUMP: 1 << 2
+};
+
 const MAX_GB_DEN = 1 / 250;
 
 class Groundboost {
@@ -12,10 +19,11 @@ class Groundboost {
 
 	static onUpdate() {
 		const lastMoveData = MomentumMovementAPI.GetLastMoveData();
-		const knockbackTime = Math.max(lastMoveData.knockbackTime, 0);
+		const defragTimer = lastMoveData.defragTimer;
+		const bGroundboost = lastMoveData.defragTimerFlags & TIMER_FLAGS.KNOCKBACK && lastMoveData.moveStatus === 1;
 
-		this.groundboostMeter.value = Math.min(knockbackTime * MAX_GB_DEN, 1);
-		this.groundboostTime.text = knockbackTime > 0 ? knockbackTime.toFixed() : '';
+		this.groundboostMeter.value = bGroundboost ? Math.min(defragTimer * MAX_GB_DEN, 1) : 0;
+		this.groundboostTime.text = lastMoveData.defragTimerFlags === 3; //defragTimer > 0 ? defragTimer : '';
 	}
 
 	static {
