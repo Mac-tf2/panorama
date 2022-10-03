@@ -1005,6 +1005,15 @@
 
 				</Panel>
 
+				<ChaosSettingsSlider
+					text="#Settings_Defrag_Projectile_DrawDelay"
+					min="0"
+					max="1"
+					displayprecision="2"
+					convar="mom_df_projectile_drawdelay"
+					infomessage="#Settings_Defrag_Projectile_DrawDelay_Info"
+				/>
+
 			</Panel>
 		</Panel>
 	</Panel>
