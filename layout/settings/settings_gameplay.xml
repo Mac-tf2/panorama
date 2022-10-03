@@ -406,7 +406,7 @@
 					text="#MOM_Settings_RJ_RocketDrawDelayEntry_Label"
 					min="0"
 					max="1"
-					displayprecision="1"
+					displayprecision="2"
 					convar="mom_rj_rocket_drawdelay"
 					infomessage="#MOM_Settings_RJ_RocketDrawDelayEntry_TT"
 				/>
@@ -546,7 +546,7 @@
 					text="#MOM_Settings_SJ_DrawDelayEntry_Label"
 					min="0"
 					max="1"
-					displayprecision="1"
+					displayprecision="2"
 					convar="mom_sj_stickybomb_drawdelay"
 					infomessage="#MOM_Settings_SJ_DrawDelayEntry_TT"
 				/>
